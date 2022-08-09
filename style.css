@@ -1,0 +1,41 @@
+body{
+    width: 1584px;
+    background-color: rgb(191, 225, 255);
+    padding: auto;
+    margin:auto;
+    border-radius: 25px;}
+
+.menu a{
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;}
+
+.menu{
+    padding: 20px  20px 20px 1100px;
+    border: 25px;
+    background-color: #0206b7;}
+
+/*con esto cambia el color del navegador cuando paso el mouse  */ 
+.menu a:hover{
+    background-color: aqua;
+}
+
+/*con esto consigo el  diseño del menu del navegador */
+.menu li{    
+    display: inline-block;
+    border: 20px;
+    color: #0206b7;}
+
+h2{
+    text-align: center;
+}
+
+/* con esto le doy diseño a las columnas   */
+.col{
+    width: 300px;
+    display: inline-block;
+    padding: 100px;
+    vertical-align: top;
+    text-align: justify;
+    border: 25px;}
+

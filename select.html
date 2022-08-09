@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option</title>
+    <style>
+        *{
+            text-align: justify;
+        }
+        body{
+            width: 960px;
+            background-color: aquamarine;
+            margin:auto;
+            border-color: black;
+        }
+
+        .week{
+            display: inline-block;
+            padding: 25px;
+            border: 25px;
+        }
+
+        fieldset{
+            padding: 25px;
+            width: 450px;
+            border-radius: 25px;
+            border-color: black;
+            display: inline;
+        }
+
+        fieldset-label{
+            display: inline-block;
+
+        }
+        .button{
+            width: 40%;
+            display: inline-block;
+            padding: 15px;
+            margin: 15px;
+            background-color: aliceblue;
+            color: rgb(66, 69, 69);
+            font-size: 18px;
+        }
+
+        h2{
+            border-color: black;
+            padding: 25px;
+           
+        }
+
+        
+       
+    </style>
+</head>
+<body>
+
+    <!--La etiqueta select da la opcion de seleccion multiple desplegable-->
+    <fieldset>
+        <form >
+            <h2>Form acces</h2>
+            <p>What time do you need atention</p>
+            <select name="week" id="first">
+                <option value="day">Morning</option>
+                <option value="day">afternoon</option>
+                <option value="day">evening</option>
+            </select>
+            <br><br><br>
+            <label for="name">Name</label>
+            <input type="text">
+            <br><br><br>
+            <label for="email">Email</label>
+            <input type="email">
+            <br><br><br>
+            <label for="txt-area">Your comments here</label>
+            <br><br><br>
+            <textarea name="name" id="" cols="30" rows="10"></textarea>
+            <br>
+            <input class="button" type="button" value="Send">
+        </form>
+    </fieldset>
+</body>
+</html>
