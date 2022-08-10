@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML con diseño CSS</title>
+    <style>
+        *{border-radius: 8px;}
+
+        body{
+            display: grid; /* Es el modulo de diseño de cuadriculas */
+            grid-template-columns: 1fr 1fr; /* Especifica el número (y el ancho) de las columnas en un diseño de cuadrícula.*/
+            grid-template-rows: repeat(12,1fr);/*La propiedad CSS grid-template-rowsdefine el nombre de las líneas y las funciones de tamaño de línea de grid rows .*/
+            height: 960px;
+            gap: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        header{
+            background-color:#004550;
+            color: aliceblue;
+            grid-column: 1/-1;
+            display: grid;
+            place-content: center;
+        }
+        nav{
+            background-color:#00d279;
+            grid-column: 1/-1; /*deja la etiqueta en todo el ancho de la pagina*/
+            place-content: center;
+        }
+        aside{
+            background-color:#fdffaf;
+            grid-row: 3/12;
+            display: grid;
+            place-content: center;
+        }
+        section{
+            background-color: #004550;
+            color: aliceblue;
+            grid-row: 3/12;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 10px;
+        }
+        article{
+            
+            background-color:#9ef589;
+            color: #041614;
+            height: 100%;
+            display: grid;
+            place-content: center;
+
+        }
+        footer{
+            background-color: #9ef589;
+            grid-column: 1/-1;
+        }
+    </style>
+</head>
+<body>
+    <header>HEADER</header>
+    <nav>NAV</nav>
+    <aside>ASIDE</aside>
+    <section>SECTION 
+        <article>ARTICLE</article>
+        <article>ARTICLE</article>
+        <article>ARTICLE</article>
+        
+    </section>
+
+    <footer>FOOTER</footer>
+</body>
+</html>
